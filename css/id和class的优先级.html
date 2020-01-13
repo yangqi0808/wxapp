@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>    
+        <style>
+            #p{
+                color: green;
+            }
+
+            .p{
+                color: red;
+            }
+
+            p{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- id权重大于class权重 ,style又根据就近原则权重最大   -->
+        <p   style="color: pink" id="p" class="p" >你是人间的四月天</p>
+    </body>
+</html>
