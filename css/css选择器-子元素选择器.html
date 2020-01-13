@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <title>子元素选择器</title>
+        <style>
+            /* 只选用后代中的一个      */
+            /* 也可用.box1 >h2 , .box2 >h2 让这两个子代变色 */
+         .box2 > h2 {              
+               color: cadetblue;
+           }
+        </style>
+    </head>
+    <body>
+        <h2 >你是人间四月天</h2>  
+        <div class="box1">
+            <h2 >你是人间四月天</h2>  
+            <div class="box2">
+                <h2 >你是人间四月天</h2>  
+        </div>
+    </div>
+    </body>
+</html>
