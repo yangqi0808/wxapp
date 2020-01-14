@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+           .wangjianlin{
+               width: 400px;
+               height: 400px;
+               background-color: red;
+               position: absolute;
+               top: 0;
+               left: 0;
+               z-index: 2;
+           }
+
+           .wangsicong{
+               width: 200px;
+               height: 200px;
+               background-color: green;
+               position: absolute;
+               top: 0;
+               left: 0;
+               z-index: -1;
+           }
+
+           .linzhiying{
+               width: 300px;
+               height: 300px;
+               background-color: pink;
+               position: absolute;
+               top: 0;
+               left: 0;
+               z-index: 1;
+           }
+
+           .kimi{
+               width: 100px;
+               height: 100px;
+               background-color: blue;
+               position: absolute;
+               top: 0;
+               left: 0;
+               z-index: 10000;
+           }
+           
+        </style>
+    </head>
+    <body>
+        <div class="wangjianlin">
+            <div class="wangsicong"></div>
+        </div>
+        <div class="linzhiying">
+            <div class="kimi"></div>
+        </div>
+    </body>
+</html>
