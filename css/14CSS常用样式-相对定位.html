@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            .box1, .box2, .box3{
+                width: 100px;
+                height: 100px;
+                color: white;
+            }
+
+            .box1{
+                background-color: red;
+            }
+
+            .box2{
+                background-color: green;
+                position:relative;
+
+                 /* left: 100px; 左边的间距设置为100px，即向右移动了100px  */
+                   /* bottom: 100px;  向上移动了100px   */
+            }
+
+            .box3{
+                background-color: blue;
+                position: relative;  /* 相对定位 */
+                  /* right: 100px;  向右移动了100px，等价于left:100p*/
+                 top: 100px; 
+                
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="box1">box1</div>
+        <div class="box3">box3</div>
+        <div class="box2">box2</div>
+         <!-- <div class="box3">box3</div> -->
+    </body> 
+</html>
