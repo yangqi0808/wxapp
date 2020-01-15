@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    div{
+        background-color: blue;
+        width:200px;
+        height:100px;
+        display:none;      /*隐藏元素*/
+    }
+    p{
+        background-color: blueviolet;
+        width:200px;
+        height:100px;
+         display:inline;   /*块级元素变行内元素 */
+    }
+    .p2{
+        background-color: cornflowerblue;
+        width:200px;
+        height:500px;          
+        display:block;   /*行内元素变块级元素*/
+    }
+    .p1{
+        background-color: darkgreen;
+        width:300px;
+        height:200px;    /*行内元素设置宽和高无效*/
+    }
+
+    
+    </style>
+</head>
+<body>
+    <div>我是div元素</div>
+    <p>我是p元素</p>
+    <span class="p2">我是span元素</span>
+    <span class="p1">我是span元素</span>
+</body>
+</html>
