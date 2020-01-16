@@ -8,37 +8,33 @@
                 padding: 0;
                 margin: 0;
             }
-
             body{
                 height:2000px;
-                color: purple;
+                color:purple;
             }
-
-            .box1,.box5, .box6{
+            .box1,.box5{
                 width: 100px;
                 height: 100px;
             }
-
             .box1{
                 background-color: red;
+                position:absolute;
+                left:600px;
             }
-
             .box2{
-                background-color: green;
-                width: 500px;
-                height: 500px;
-                bottom:400px
-                /* position: relative;  */
+                background-color:green;
+                 width:500px;
+                height:500px; 
+                /*bottom:400px; */
+                position:absolute;
             }
-
             .box3{
                 background-color: blue;
-                width: 400px;
-                height: 400px;
-                top:200px;
-                /* position: relative; */
+                width:400px;
+                height:400px;
+                top:200px;       /*box3移动时box4也跟着移动,总之box4总是跟着3移动后的位置相对移动*/
+                position:absolute;
             }
-
             .box4{
                 background-color: yellow;
                 width: 200px;
@@ -47,19 +43,22 @@
                 top: 200px;
                 left: 20px;
             }
-
+            
             .box5{
                 background-color: pink;
                 position: absolute;
                 top: 0;
                 left: 0;
             }
-
             .box6{
                 background-color: saddlebrown;
+                position:absolute;
+                width:50px;
+                height:50px;
             }
-           
+        
         </style>
+
     </head>
     <body>
         <div class="box1">box1</div>
