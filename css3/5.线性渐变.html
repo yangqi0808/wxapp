@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8{
+                width: 500px;
+                height: 200px;
+                margin: 20px;
+            }
+
+            .box1{
+                background-image: linear-gradient(red, yellow, green);
+            }
+
+            .box2{
+                background-image: linear-gradient(to top, red, yellow, green);
+            }
+
+            .box3{
+                background-image: linear-gradient(to right, red,yellow,green);
+            }
+
+            .box4{
+                background-image: linear-gradient(to left, black,white);
+            }
+
+            .box5{
+                background-image: linear-gradient(to top right, red, yellow, green);
+            }
+
+            .box6{
+                background-color: red;  /*浏览器不兼容时显示红色*/
+                background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+            }
+
+            .box7{
+                background-image: linear-gradient(45deg, red, yellow,blue,green,purple);
+            }
+
+            .box8{
+                background-image: repeating-linear-gradient(90deg, red 10%, yellow 20%, green 30%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        <div class="box5">box5</div>
+        <div class="box6">box6</div>
+        <div class="box7">box7</div>
+        <div class="box8">box8</div>
+    </body>
+</html>

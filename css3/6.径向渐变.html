@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            .box1, .box2, .box4{
+                width: 500px;
+                height: 200px;
+                margin: 20px;
+            }
+
+            .box1{
+                background-image: radial-gradient(red, yellow, green);
+            }
+
+            .box2{
+                background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+            }
+
+            .box3{
+                width: 200px;
+                height: 200px;
+                margin: 20px;
+                border-radius: 30px 30px 70px 70px;
+                background-image: radial-gradient(circle, red, yellow, green);
+            }
+
+            .box4{
+                background-image: repeating-radial-gradient(red 5%, yellow 15%, green 10%);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </body>
+</html>

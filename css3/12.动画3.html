@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .rouface{
+            width:32px;
+            height:25px;
+            background:url(./images/tuski.png);
+            animation:rouface 400ms steps(4) infinite;
+        }
+
+        @keyframes rouface{
+            0%{
+                background-position:0 0;
+            }
+            100%{
+                background-position:0 -140px;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="rouface" ></div>
+</body>
+</html>
