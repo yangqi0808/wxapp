@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .box{
+                display: block;
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                margin: 20px 0;
+                border-radius: 50%;
+                background-image: linear-gradient(to right, red, yellow, green);
+            }
+        </style>
+    </head>
+    <body>
+        <button id="btn">显示/隐藏</button>
+        <div class="box" id="box"></div>
+        <script>
+            // 获取button元素对象，并赋值给变量oBtn
+            var oBtn = document.getElementById('btn');
+
+            // 获取div元素对象，并赋值给变量oBox
+            var oBox = document.getElementById('box');
+
+            oBtn.onclick = function(){
+                console.log(oBox.style.display);
+
+                if(oBox.style.display == "" || oBox.style.display == "block")
+                {
+                    oBox.style.display = "none";
+                }
+                else
+                {
+                    oBox.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>

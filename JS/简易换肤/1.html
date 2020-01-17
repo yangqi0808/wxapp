@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/black.css" id="J_link">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeColor('black');">黑</button>
+    <button onclick="changeColor('gray');">灰</button>
+    <button onclick="changeColor('green');">绿</button>
+    <button onclick="changeColor('red');">红</button>
+    <button onclick="changeColor('yellow');">黄</button>
+    <p>你是人间四月天</p>
+    <p>人间失格</p>
+    <p>我是猫</p>
+    <script>
+    function changeColor(color)
+    {
+        document.getElementById("J_link").href="./css/" + color + ".css";
+    }
+    </script>
+</body>
+</html>

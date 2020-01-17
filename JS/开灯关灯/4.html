@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .night{
+        background:black;
+        color: white;
+    }
+
+    .day{
+        background:white;
+        color:black;
+    }
+    
+    
+    
+    </style>
+</head>
+<body>
+    <button id="btn">开灯/关灯</button>
+    <p>月亮不睡我不睡</p>
+    <script>
+    var oBtn = document.getElementById('btn');
+    var oBody = document.body;
+    oBtn.onclick = function(){
+        console.log(oBody.className);
+        if(oBody.className == "" || oBody.className =="day"){
+            oBody.className = "night";
+        }
+        else{
+            oBody.className = "day";
+        }
+
+    }
+    
+    
+    </script>
+</body>
+</html>
